@@ -8,6 +8,10 @@ import SignUp from '../SignUp/SignUp'
 import SignIn from '../SignIn/SignIn'
 import SignOut from '../SignOut/SignOut'
 import ChangePassword from '../ChangePassword/ChangePassword'
+import RecipeIndex from '../recipe/RecipeIndex'
+import RecipeCreate from '../recipe/RecipeCreate'
+import RecipeShow from '../recipe/RecipeShow'
+import RecipeUpdate from '../recipe/RecipeUpdate'
 
 class App extends Component {
   constructor () {
@@ -53,6 +57,22 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/change-password' render={() => (
             <ChangePassword msgAlert={this.msgAlert} user={user} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/recipes' render={() => (
+            <RecipeIndex msgAlert={this.msgAlert} user={user} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/recipe/:recipeId' render={({ match }) => (
+            <RecipeShow msgAlert={this.msgAlert} user={user} match={match}/>
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/recipe-create' render={({ match }) => (
+            <RecipeCreate msgAlert={this.msgAlert} match={match} user={user} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/recipe-update/:recipeId' render={({ match, history }) => (
+            <RecipeUpdate match={match} history={history} user={user} msgAlert={this.msgAlert} />
           )} />
         </main>
       </Fragment>

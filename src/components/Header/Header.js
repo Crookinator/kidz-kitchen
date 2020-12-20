@@ -1,10 +1,17 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#change-password">Change Password</Nav.Link>
+    <NavDropdown title="Recipes" class="collapsible-nav-dropdown">
+      <NavDropdown.Item href="#recipes">View Recipes</NavDropdown.Item>
+      <NavDropdown.Item href="#recipe-create">Make a New Recipe</NavDropdown.Item>
+    </NavDropdown>
+    <NavDropdown title="Settings" class="collapsible-nav-dropdown">
+      <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
+    </NavDropdown>
     <Nav.Link href="#sign-out">Sign Out</Nav.Link>
   </Fragment>
 )
@@ -16,14 +23,8 @@ const unauthenticatedOptions = (
   </Fragment>
 )
 
-const alwaysOptions = (
-  <Fragment>
-    <Nav.Link to="/">Home</Nav.Link>
-  </Fragment>
-)
-
 const Header = ({ user }) => (
-  <Navbar bg="primary" variant="dark" expand="md">
+  <Navbar collapseOnSelect bg="primary" variant="dark" expand="md">
     <Navbar.Brand href="#">
       react-auth-template
     </Navbar.Brand>
@@ -31,7 +32,6 @@ const Header = ({ user }) => (
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto">
         { user && <span className="navbar-text mr-2">Welcome, {user.email}</span>}
-        { alwaysOptions }
         { user ? authenticatedOptions : unauthenticatedOptions }
       </Nav>
     </Navbar.Collapse>
