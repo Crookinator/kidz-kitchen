@@ -40,7 +40,7 @@ const RecipeCreate = props => {
   }
 
   if (createdRecipeId) {
-    return <Redirect to={`/recipes/${createdRecipeId}`} />
+    return <Redirect to={`/recipe/${createdRecipeId}`} />
   }
 
   return (

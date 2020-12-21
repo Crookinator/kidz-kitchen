@@ -2,7 +2,7 @@ import React from 'react'
 import Form from 'react-bootstrap/Form'
 import Button from 'react-bootstrap/Button'
 
-const RecipeForm = ({ recipe, user, handleSubmit, handleChange, match }) => {
+const RecipeFormNoDropdown = ({ recipe, user, handleSubmit, handleChange, match }) => {
   return (
     <form>
       <Form.Group controlId='recipe'>
@@ -45,22 +45,6 @@ const RecipeForm = ({ recipe, user, handleSubmit, handleChange, match }) => {
           name="instructions"
           onChange={handleChange}
         />
-
-        <Form.Label>Cuisine</Form.Label>
-        <Form.Control
-          as='select'
-          onChange={handleChange}
-          name="cuisine"
-        >
-          <option selected disabled>Choose Cuisine</option>
-          <option value='american'>American</option>
-          <option value='asian'>Asian</option>
-          <option value='french'>French</option>
-          <option value='german'>German</option>
-          <option value='italian'>Italian</option>
-          <option value='mexican'>Mexican</option>
-          <option value='spanish'>Spanish</option>
-        </Form.Control>
       </Form.Group>
       <Button
         className="form-submit-button"
@@ -72,4 +56,4 @@ const RecipeForm = ({ recipe, user, handleSubmit, handleChange, match }) => {
     </form>
   )
 }
-export default RecipeForm
+export default RecipeFormNoDropdown

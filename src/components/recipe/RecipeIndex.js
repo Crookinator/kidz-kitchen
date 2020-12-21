@@ -26,9 +26,11 @@ const RecipeIndex = (props) => {
   ))
   return (
     <Fragment>
-      <div className='recipesDisplay'>
-        <h2>Recipes</h2>
-        {index}
+      <div className='row'>
+        <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+          <h1>Recipes</h1>
+          {index}
+        </div>
       </div>
     </Fragment>
   )

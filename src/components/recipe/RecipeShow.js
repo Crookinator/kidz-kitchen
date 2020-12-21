@@ -1,4 +1,4 @@
-import React, { useState, useEffect, Fragment } from 'react'
+import React, { useState, useEffect } from 'react'
 import { withRouter, Redirect } from 'react-router-dom'
 import { showRecipe, deleteRecipe } from '../../api/recipe'
 import Button from 'react-bootstrap/Button'
@@ -38,7 +38,7 @@ const RecipeShow = (props) => {
           variant: 'success'
         })
       })
-      .then(() => history.push('/tasks'))
+      .then(() => history.push('/recipes'))
       .catch(err => {
         msgAlert({
           heading: 'Deletion Failed',
@@ -60,13 +60,9 @@ const RecipeShow = (props) => {
     return (<div><p>Loading...</p></div>)
   }
   return (
-    <div>
-      <Fragment>
-        <div className='recipeDisplay'>
-          <h2>Recipe</h2>
-        </div>
-      </Fragment>
-      <div>
+    <div className="row">
+      <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+        <h1>Recipe</h1>
         <Card>
           <Card.Body>
             <Card.Title>{recipe.title}</Card.Title>
