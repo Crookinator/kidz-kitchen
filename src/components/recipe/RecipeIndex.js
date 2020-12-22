@@ -1,4 +1,5 @@
 import React, { useState, useEffect, Fragment } from 'react'
+import { Link } from 'react-router-dom'
 import { indexRecipes } from '../../api/recipe'
 import UiCard from './../shared/UiCard'
 
@@ -14,16 +15,19 @@ const RecipeIndex = (props) => {
         variant: 'danger'
       }))
   }, [])
+  let index
   if (!recipes) {
-    return <p>Loading...</p>
+    index = <h2>Loading...</h2>
+  } else if (recipes.length === 0) {
+    index = <div><h2>No Recipes to Display</h2> <Link to="/recipe-create">Make a New Recipe</Link></div>
+  } else {
+    index = recipes.map(recipe => (
+      <UiCard
+        key={recipe.title}
+        item={recipe}
+      />
+    ))
   }
-
-  const index = recipes.map(recipe => (
-    <UiCard
-      key={recipe.title}
-      item={recipe}
-    />
-  ))
   return (
     <Fragment>
       <div className='row'>

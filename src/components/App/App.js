@@ -12,6 +12,7 @@ import RecipeIndex from '../recipe/RecipeIndex'
 import RecipeCreate from '../recipe/RecipeCreate'
 import RecipeShow from '../recipe/RecipeShow'
 import RecipeUpdate from '../recipe/RecipeUpdate'
+import { Index } from '../recipePuppy/Index'
 
 class App extends Component {
   constructor () {
@@ -74,6 +75,10 @@ class App extends Component {
 
           <AuthenticatedRoute user={user} exact path='/recipe-update/:recipeId' render={({ match, history }) => (
             <RecipeUpdate match={match} history={history} user={user} msgAlert={this.msgAlert} />
+          )} />
+
+          <Route exact path='/generate-recipe' render={({ match, history }) => (
+            <Index match={match} history={history} msgAlert={this.msgAlert} />
           )} />
         </main>
       </Fragment>

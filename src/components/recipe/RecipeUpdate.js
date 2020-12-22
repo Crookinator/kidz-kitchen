@@ -13,8 +13,8 @@ const RecipeUpdate = props => {
     showRecipe(user, match.params.recipeId)
       .then(res => setRecipe(res.data.recipe))
       .then(() => msgAlert({
-        heading: 'Recipe show success!',
-        message: 'Check it out',
+        heading: 'Recipe Import Success',
+        message: 'Imported Recipe into the Form',
         variant: 'success'
       }))
       .catch(err => msgAlert({
@@ -52,7 +52,7 @@ const RecipeUpdate = props => {
 
   if (updated) {
     // redirect to the updated recipe
-    return <Redirect to={`/recipe/${match.params.id}`} />
+    return <Redirect to={`/recipe/${recipe.id}`} />
   }
 
   return (
