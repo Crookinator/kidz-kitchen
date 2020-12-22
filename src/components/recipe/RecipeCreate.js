@@ -47,7 +47,7 @@ const RecipeCreate = props => {
     <div className="row">
       <div className="col-sm-10 col-md-8 mx-auto mt-5">
         <div className='darkForm'>
-          <h3>Add a Recipe</h3>
+          <h1>Add a Recipe</h1>
           <RecipeForm
             recipe={recipe}
             handleChange={handleChange}

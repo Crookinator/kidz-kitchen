@@ -3,6 +3,6 @@ import axios from 'axios'
 export const generateRecipes = (query) => {
   return axios({
     method: 'GET',
-    url: 'http://www.recipepuppy.com/api/?q=kids'
+    url: `http://recipepuppyproxy.herokuapp.com/api/?q=${query}`
   })
 }

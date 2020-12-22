@@ -12,7 +12,7 @@ import RecipeIndex from '../recipe/RecipeIndex'
 import RecipeCreate from '../recipe/RecipeCreate'
 import RecipeShow from '../recipe/RecipeShow'
 import RecipeUpdate from '../recipe/RecipeUpdate'
-import { Index } from '../recipePuppy/Index'
+import Index from '../recipePuppy/Index'
 
 class App extends Component {
   constructor () {
