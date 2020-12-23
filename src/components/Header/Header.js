@@ -8,6 +8,7 @@ const authenticatedOptions = (
     <NavDropdown title="Recipes" class="collapsible-nav-dropdown">
       <NavDropdown.Item href="#recipes">View Recipes</NavDropdown.Item>
       <NavDropdown.Item href="#recipe-create">Make a New Recipe</NavDropdown.Item>
+      <NavDropdown.Item href="#search">Generate Recipe</NavDropdown.Item>
     </NavDropdown>
     <NavDropdown title="Settings" class="collapsible-nav-dropdown">
       <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
@@ -24,7 +25,7 @@ const unauthenticatedOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar collapseOnSelect bg="dark" variant="dark" expand="md">
+  <Navbar className="navbar" collapseOnSelect bg='dark' variant="dark" expand="md">
     <Navbar.Brand href="#">
       Kidz Kitchen
     </Navbar.Brand>

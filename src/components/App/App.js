@@ -12,7 +12,13 @@ import RecipeIndex from '../recipe/RecipeIndex'
 import RecipeCreate from '../recipe/RecipeCreate'
 import RecipeShow from '../recipe/RecipeShow'
 import RecipeUpdate from '../recipe/RecipeUpdate'
-import Index from '../recipePuppy/Index'
+import Search from '../recipePuppy/Search'
+import Kids from '../recipePuppy/Kids'
+import American from '../recipePuppy/American'
+import British from '../recipePuppy/British'
+import French from '../recipePuppy/French'
+import Italian from '../recipePuppy/Italian'
+import Mexican from '../recipePuppy/Mexican'
 
 class App extends Component {
   constructor () {
@@ -77,9 +83,34 @@ class App extends Component {
             <RecipeUpdate match={match} history={history} user={user} msgAlert={this.msgAlert} />
           )} />
 
-          <Route exact path='/generate-recipe' render={({ match, history }) => (
-            <Index match={match} history={history} msgAlert={this.msgAlert} />
+          <AuthenticatedRoute user={user} exact path='/search' render={({ match, history }) => (
+            <Search match={match} history={history} msgAlert={this.msgAlert} />
           )} />
+
+          <AuthenticatedRoute user={user} exact path='/kids' render={({ match, history }) => (
+            <Kids match={match} history={history} msgAlert={this.msgAlert} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/american' render={({ match, history }) => (
+            <American match={match} history={history} msgAlert={this.msgAlert} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/british' render={({ match, history }) => (
+            <British match={match} history={history} msgAlert={this.msgAlert} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/french' render={({ match, history }) => (
+            <French match={match} history={history} msgAlert={this.msgAlert} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/italian' render={({ match, history }) => (
+            <Italian match={match} history={history} msgAlert={this.msgAlert} />
+          )} />
+
+          <AuthenticatedRoute user={user} exact path='/mexican' render={({ match, history }) => (
+            <Mexican match={match} history={history} msgAlert={this.msgAlert} />
+          )} />
+
         </main>
       </Fragment>
     )

@@ -48,7 +48,7 @@ const RecipeFormNoDropdown = ({ recipe, user, handleSubmit, handleChange, match 
       </Form.Group>
       <Button
         className="form-submit-button"
-        variant="primary"
+        variant="dark"
         onClick={ handleSubmit }
       >
       Submit

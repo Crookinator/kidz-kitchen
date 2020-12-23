@@ -54,17 +54,15 @@ const RecipeForm = ({ recipe, user, handleSubmit, handleChange, match }) => {
         >
           <option selected disabled>Choose Cuisine</option>
           <option value='american'>American</option>
-          <option value='asian'>Asian</option>
+          <option value='british'>British</option>
           <option value='french'>French</option>
-          <option value='german'>German</option>
           <option value='italian'>Italian</option>
           <option value='mexican'>Mexican</option>
-          <option value='spanish'>Spanish</option>
         </Form.Control>
       </Form.Group>
       <Button
         className="form-submit-button"
-        variant="primary"
+        variant="dark"
         onClick={ handleSubmit }
       >
       Submit
