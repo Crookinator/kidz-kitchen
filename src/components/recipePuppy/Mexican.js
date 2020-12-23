@@ -3,14 +3,21 @@ import { Link } from 'react-router-dom'
 import { generateRecipes } from '../../api/recipePuppy'
 import UiCardRecipePuppy from './../shared/UiCardRecipePuppy'
 
-const Index = (props) => {
+const Mexican = (props) => {
   const [recipes, setRecipes] = useState(null)
   const { msgAlert } = props
   useEffect(() => {
-    generateRecipes('kids')
+    let count = 0
+    generateRecipes('mexican')
       .then(res => {
         setRecipes(res.data.results)
+        count = res.data.results.length
       })
+      .then(() => msgAlert({
+        heading: 'Collected Mexican Cuisine',
+        message: `Successfully Retrieved ${count} Mexican Cuisine Recipes`,
+        variant: 'success'
+      }))
       .catch(() => msgAlert({
         heading: 'Index Fail',
         message: 'Failed to index',
@@ -42,4 +49,4 @@ const Index = (props) => {
   )
 }
 
-export default Index
+export default Mexican
