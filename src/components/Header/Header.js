@@ -24,9 +24,9 @@ const unauthenticatedOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar collapseOnSelect bg="primary" variant="dark" expand="md">
+  <Navbar collapseOnSelect bg="dark" variant="dark" expand="md">
     <Navbar.Brand href="#">
-      react-auth-template
+      Kidz Kitchen
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">

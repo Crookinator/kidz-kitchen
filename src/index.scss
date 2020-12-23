@@ -1,1 +1,82 @@
 @import '~bootstrap/scss/bootstrap';
+
+.logo {
+  height: 40px;
+  width: 40px;
+  // margin: 5px;
+}
+
+.navbar {
+  background: blue;
+  display: flex;
+}
+
+.card {
+  margin: 12px;
+  display: flex;
+}
+
+.form-submit-button {
+  border-radius: 10px;
+  background-color: blue;
+  margin: 5px;
+  font-size: 20px;
+}
+
+.delete {
+  background-color: rgba(255, 4, 4, 0.849);
+}
+
+.update {
+  background-color: blue;
+}
+
+.theBanner {
+  margin: 10px;
+}
+a {
+  text-decoration: underline;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: black;
+    color: white;
+  }
+
+  .logo {
+    height: 40px;
+    width: 40px;
+    // margin: 5px;
+  }
+
+  .card {
+    margin: 12px;
+  }
+
+  .form-submit-button {
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 20px;
+  }
+
+  .delete {
+    background-color: rgba(255, 4, 4, 0.849);
+  }
+
+  .update {
+    background-color: rgb(2, 2, 77);
+  }
+
+  .theBanner {
+    margin: 10px;
+  }
+
+  .darkForm {
+    border-radius: 5px;
+    padding: 5px;
+  }
+  a {
+    text-decoration: underline;
+  }
+}
