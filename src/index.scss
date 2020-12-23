@@ -105,4 +105,12 @@ a {
     display: flex;
     flex-wrap: wrap;
   }
+
+  .form-control {
+    background: black;
+  }
+  .form-control:focus {
+    background: #343a40;
+    color: white;
+  };
 }

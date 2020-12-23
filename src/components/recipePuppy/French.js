@@ -1,5 +1,7 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import Spinner from 'react-bootstrap/Spinner'
+
 import { generateRecipes } from '../../api/recipePuppy'
 import UiCardRecipePuppy from './../shared/UiCardRecipePuppy'
 
@@ -26,7 +28,9 @@ const French = (props) => {
   }, [])
   let options = null
   if (!recipes) {
-    options = <h2>Loading...</h2>
+    options = <Spinner animation="border" role="status">
+      <span className="sr-only">Loading...</span>
+    </Spinner>
   } else if (recipes.length === 0) {
     options = <div><h2>No Recipes to Display</h2> <Link to="/recipe-create">Make a New Recipe</Link></div>
   } else {

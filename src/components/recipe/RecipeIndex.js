@@ -1,5 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import { Link } from 'react-router-dom'
+import Spinner from 'react-bootstrap/Spinner'
 import { indexRecipes } from '../../api/recipe'
 import UiCard from './../shared/UiCard'
 
@@ -17,7 +18,9 @@ const RecipeIndex = (props) => {
   }, [])
   let index
   if (!recipes) {
-    index = <h2>Loading...</h2>
+    index = <Spinner animation="border" role="status">
+      <span className="sr-only">Loading...</span>
+    </Spinner>
   } else if (recipes.length === 0) {
     index = <div><h2>No Recipes to Display</h2> <Link to="/recipe-create">Make a New Recipe</Link></div>
   } else {
