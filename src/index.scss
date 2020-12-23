@@ -7,18 +7,20 @@
 }
 
 .navbar {
-  background: blue;
+  background: #EF8B37;
   display: flex;
 }
 
 .card {
   margin: 12px;
+  background: #EF8B37;
+  color: white;
   display: flex;
 }
 
 .form-submit-button {
   border-radius: 10px;
-  background-color: blue;
+  background-color: #EF8B37;
   margin: 5px;
   font-size: 20px;
 }
@@ -38,9 +40,26 @@ a {
   text-decoration: underline;
 }
 
+.display {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 @media (prefers-color-scheme: dark) {
   body {
     background: black;
+    color: white;
+  }
+
+  .navbar {
+    background: #343a40;
+  }
+
+  .dropdown-menu {
+    background: #343a40;
+  }
+
+  .dropdown-item {
     color: white;
   }
 
@@ -52,11 +71,12 @@ a {
 
   .card {
     margin: 12px;
-    background: black;
+    background: #343a40;
   }
 
   .form-submit-button {
     border-radius: 10px;
+    background: #343a40;
     margin: 5px;
     font-size: 20px;
   }
@@ -79,5 +99,10 @@ a {
   }
   a {
     text-decoration: underline;
+  }
+
+  .display {
+    display: flex;
+    flex-wrap: wrap;
   }
 }

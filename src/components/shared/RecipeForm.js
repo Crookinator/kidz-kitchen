@@ -62,7 +62,7 @@ const RecipeForm = ({ recipe, user, handleSubmit, handleChange, match }) => {
       </Form.Group>
       <Button
         className="form-submit-button"
-        variant="dark"
+
         onClick={ handleSubmit }
       >
       Submit

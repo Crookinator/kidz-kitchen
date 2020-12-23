@@ -25,7 +25,7 @@ const unauthenticatedOptions = (
 )
 
 const Header = ({ user }) => (
-  <Navbar className="navbar" collapseOnSelect bg='dark' variant="dark" expand="md">
+  <Navbar className="navbar" collapseOnSelect variant="dark" expand="md">
     <Navbar.Brand href="#">
       Kidz Kitchen
     </Navbar.Brand>

@@ -3,11 +3,11 @@ import { Card } from 'react-bootstrap'
 
 const Search = ({ props }) => {
   return (
-    <div>
-      <div>
-        <h1>Recipe Catagories</h1>
+    <React.Fragment>
+      <h1>Recipe Catagories</h1>
+      <div className='display'>
         <Card
-          style={{ width: '18rem' }}
+          style={{ width: '25rem' }}
           className="card">
           <Card.Img variant="top" src='' />
           <Card.Body>
@@ -17,7 +17,7 @@ const Search = ({ props }) => {
         </Card>
 
         <Card
-          style={{ width: '18rem' }}
+          style={{ width: '25rem' }}
           className="card">
           <Card.Img variant="top" src='' />
           <Card.Body>
@@ -27,7 +27,7 @@ const Search = ({ props }) => {
         </Card>
 
         <Card
-          style={{ width: '18rem' }}
+          style={{ width: '25rem' }}
           className="card">
           <Card.Img variant="top" src='' />
           <Card.Body>
@@ -37,7 +37,7 @@ const Search = ({ props }) => {
         </Card>
 
         <Card
-          style={{ width: '18rem' }}
+          style={{ width: '25rem' }}
           className="card">
           <Card.Img variant="top" src='' />
           <Card.Body>
@@ -47,7 +47,7 @@ const Search = ({ props }) => {
         </Card>
 
         <Card
-          style={{ width: '18rem' }}
+          style={{ width: '25rem' }}
           className="card">
           <Card.Img variant="top" src='' />
           <Card.Body>
@@ -57,7 +57,7 @@ const Search = ({ props }) => {
         </Card>
 
         <Card
-          style={{ width: '18rem' }}
+          style={{ width: '25rem' }}
           className="card">
           <Card.Img variant="top" src='' />
           <Card.Body>
@@ -66,7 +66,7 @@ const Search = ({ props }) => {
           </Card.Body>
         </Card>
       </div>
-    </div>
+    </React.Fragment>
   )
 }
 
