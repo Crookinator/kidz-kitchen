@@ -1,8 +1,11 @@
 import React, { Fragment } from 'react'
+import banner from './kidz_kitchen_banner.png'
+
 const Home = () => (
   <Fragment>
     <div className='row'>
       <div className='col-sm-10 col-md-8 mx-auto mt-5'>
+        <img src={banner} className='theBanner' alt='The words kidz kitchen with green, yellow, and red splotches in the background..' />
         <h1>Welcome to Kidz Kitchen</h1>
         <br/>
         <p>

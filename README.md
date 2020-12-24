@@ -2,6 +2,14 @@
 
 Kids Kitchen is an app for aspiring young cooks to keep track of their recipes. It is designed to be a fun and supportive tool for children to be inspired to love cooking and to be creative.
 
+## Related Links
+### Live Site
+https://crookinator.github.io/kidz-kitchen
+
+### API
+GitHub Repo: https://github.com/Crookinator/kidz-kitchen-api 
+Heroku App: https://kidz-kitchen.herokuapp.com 
+
 ## Installation
 
 1. Fork and Clone this Repo.

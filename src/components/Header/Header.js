@@ -2,6 +2,7 @@ import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
 import NavDropdown from 'react-bootstrap/NavDropdown'
+import logo from './kidz_kitchen_icon_dark_mode.png'
 
 const authenticatedOptions = (
   <Fragment>
@@ -27,7 +28,7 @@ const unauthenticatedOptions = (
 const Header = ({ user }) => (
   <Navbar className="navbar" collapseOnSelect variant="dark" expand="md">
     <Navbar.Brand href="#">
-      Kidz Kitchen
+      <img src={logo} alt="Knives, forks, and spoons coming together to form two Kays for Kids kitchen " className="logo"/>
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
