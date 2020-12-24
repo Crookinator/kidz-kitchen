@@ -53,11 +53,11 @@ const RecipeForm = ({ recipe, user, handleSubmit, handleChange, match }) => {
           name="cuisine"
         >
           <option selected disabled>Choose Cuisine</option>
-          <option value='american'>American</option>
-          <option value='british'>British</option>
-          <option value='french'>French</option>
-          <option value='italian'>Italian</option>
-          <option value='mexican'>Mexican</option>
+          <option value='American'>American</option>
+          <option value='British'>British</option>
+          <option value='French'>French</option>
+          <option value='Italian'>Italian</option>
+          <option value='Mexican'>Mexican</option>
         </Form.Control>
       </Form.Group>
       <Button

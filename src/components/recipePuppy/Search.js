@@ -4,8 +4,8 @@ import { Card } from 'react-bootstrap'
 const Search = ({ props }) => {
   return (
     <React.Fragment>
-      <h1>Recipe Catagories</h1>
-      <div className='display'>
+      <h1>Recipes by Cuisine</h1>
+      <div>
         <Card
           style={{ width: '25rem' }}
           className="card">

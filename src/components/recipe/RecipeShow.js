@@ -65,11 +65,10 @@ const RecipeShow = (props) => {
         <h1>Recipe</h1>
         <Card>
           <Card.Body>
-            <Card.Title>{recipe.title}</Card.Title>
-            <Card.Text>{recipe.cuisine}</Card.Text>
+            <Card.Title>{recipe.title} ({recipe.cuisine})</Card.Title>
             <Card.Text>{recipe.description}</Card.Text>
-            <Card.Text>{recipe.instructions}</Card.Text>
-            <Card.Text>{recipe.ingredients}</Card.Text>
+            <Card.Text>Instructions: {recipe.instructions}</Card.Text>
+            <Card.Text>Ingredients: {recipe.ingredients}</Card.Text>
             <Button className="form-submit-button update" onClick={handleUpdate}>Update</Button>
             <Button className="form-submit-button delete" onClick={handleDelete}>Delete</Button>
           </Card.Body>
