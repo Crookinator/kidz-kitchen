@@ -5,7 +5,7 @@ const Search = ({ props }) => {
   return (
     <React.Fragment>
       <h1>Recipes by Cuisine</h1>
-      <div>
+      <div className='display'>
         <Card
           style={{ width: '25rem' }}
           className="card">
