@@ -9,9 +9,8 @@ const Search = ({ props }) => {
         <Card
           style={{ width: '25rem' }}
           className="card">
-          <Card.Img variant="top" src='' />
           <Card.Body>
-            <Card.Title>For Kids</Card.Title>
+            <Card.Title><h3>For Kids</h3></Card.Title>
             <Card.Link href='#kids'>Generate Recipes</Card.Link>
           </Card.Body>
         </Card>
@@ -19,9 +18,8 @@ const Search = ({ props }) => {
         <Card
           style={{ width: '25rem' }}
           className="card">
-          <Card.Img variant="top" src='' />
           <Card.Body>
-            <Card.Title>American</Card.Title>
+            <Card.Title><h3>American</h3></Card.Title>
             <Card.Link href='#american'>Generate Recipes</Card.Link>
           </Card.Body>
         </Card>
@@ -29,19 +27,17 @@ const Search = ({ props }) => {
         <Card
           style={{ width: '25rem' }}
           className="card">
-          <Card.Img variant="top" src='' />
           <Card.Body>
-            <Card.Title>British</Card.Title>
-            <Card.Link href='#british'>Generate Recipe</Card.Link>
+            <Card.Title><h3>British</h3></Card.Title>
+            <Card.Link href='#british'>Generate Recipes</Card.Link>
           </Card.Body>
         </Card>
 
         <Card
           style={{ width: '25rem' }}
           className="card">
-          <Card.Img variant="top" src='' />
           <Card.Body>
-            <Card.Title>French</Card.Title>
+            <Card.Title><h3>French</h3></Card.Title>
             <Card.Link href='#french'>Generate Recipes</Card.Link>
           </Card.Body>
         </Card>
@@ -49,9 +45,8 @@ const Search = ({ props }) => {
         <Card
           style={{ width: '25rem' }}
           className="card">
-          <Card.Img variant="top" src='' />
           <Card.Body>
-            <Card.Title>Italian</Card.Title>
+            <Card.Title><h3>Italian</h3></Card.Title>
             <Card.Link href='#italian'>Generate Recipes</Card.Link>
           </Card.Body>
         </Card>
@@ -59,9 +54,8 @@ const Search = ({ props }) => {
         <Card
           style={{ width: '25rem' }}
           className="card">
-          <Card.Img variant="top" src='' />
           <Card.Body>
-            <Card.Title>Mexican</Card.Title>
+            <Card.Title><h3>Mexican</h3></Card.Title>
             <Card.Link href='#mexican'>Generate Recipes</Card.Link>
           </Card.Body>
         </Card>

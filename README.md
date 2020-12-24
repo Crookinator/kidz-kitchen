@@ -1,3 +1,10 @@
+# Screenshots
+## Light Mode Home Page
+![Kidz Kitchen Light Mode](https://user-images.githubusercontent.com/69323833/103061009-e75d2c80-4577-11eb-9cad-ba18190e7a2b.png)
+
+## Dark Mode Home Page
+![Kidz Kitchen Dark Mode](https://user-images.githubusercontent.com/69323833/103060960-cbf22180-4577-11eb-9e1c-2fa35111aeef.png)
+
 # App Description
 
 Kids Kitchen is an app for aspiring young cooks to keep track of their recipes. It is designed to be a fun and supportive tool for children to be inspired to love cooking and to be creative.
