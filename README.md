@@ -34,13 +34,10 @@ Kidz Kitchen was created with love. My son in very much into cooking and this wa
 ## User Stories
 
 As a user I would like to sign-up, sign-in, change my password, and sign-out.
-As a user I would like to setup a user profile with my name, picture, about me, and favorite cuisine.
-As a user I would like to create a recipe with a title, description, instructions, ingredients, cuisine, and also favorite it if it is a favorite.
+As a user I would like to create a recipe with a title, description, instructions, ingredients, cuisine.
 As a user I would like to see, update, or delete my created recipe.
 
 ## ERD
-
-User -|- Profile
 User -|< Recipe
 
 ## Wireframe description
@@ -48,7 +45,7 @@ User -|< Recipe
 There will be a main landing page when you visit the site with the options for sign up or sign in. The landing page will have some kind of write up about the app.
 All the authentication steps i.e. sign-up, sign-in, change password will have forms that pop up when the appropriate uri is visited.
 When a user successfully signs-up they will be redirected to the profile screen to create their profile. After this that screen will no longer be accessible as a user can not create more than one profile.
-The Main screen for the user after the sign-up and profile setup process will be their profile information displayed on the screen. There will be a navigation bar at the top for settings (to change password, and alter profile settings) and a recipes link(to crud recipes)
+The Main screen for the user after the sign-up and profile setup process will be their profile information displayed on the screen.There will be a navigation bar at the top for settings (to change password, settings) and a recipes link(to crud recipes)
 
 ## Planning and Problem Solving
 
